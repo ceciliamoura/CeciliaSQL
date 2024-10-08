@@ -13,4 +13,4 @@ You’ve been hired as a data analyst by Rockbuster Stealth’s business intelli
  * Do sales figures vary between geographic regions?
 
 ## Data set
-In this Achievement, you’ll be using a data set that contains information about Rockbuster’s film inventory, customers, and payments, among other things. It’s around 3MB and contains several files.
+In this Achievement, I worked with a data set that contains information about Rockbuster’s film inventory, customers, and payments, among other things. It’s around 3MB and contains several files.
