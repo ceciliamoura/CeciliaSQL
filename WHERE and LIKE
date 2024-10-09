@@ -1,0 +1,7 @@
+This is a query to find out films with titles that contains the word Uptown in any position:
+
+
+SELECT film_id, title, description
+FROM film
+WHERE title LIKE '%Uptown%'
+
