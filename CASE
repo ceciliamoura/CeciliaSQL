@@ -1,0 +1,11 @@
+This is a query showcasing a use of CASE statement, to find out which Rockbuster movies are suitable for children based on their ratings. The results of this query will include a new column, “kids_allowed.”
+
+SELECT film_id,
+       title,
+       rating,
+       CASE
+           WHEN rating = 'PG' THEN 'Kids allowed'
+           WHEN rating = 'NC-17' THEN 'Not allowed'
+           ELSE 'Parental Guidance recommended'
+       END AS kids_allowed
+FROM film
