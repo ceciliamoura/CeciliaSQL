@@ -1,0 +1,19 @@
+Query to retrieve more information about the resulting list, like count of the movies, average rental rate, and maximum and minimum rental durations:
+
+--- previous query:
+SELECT film_id, title, description, rating
+FROM film
+WHERE rating='PG'
+
+
+OR rating='G'
+ORDER BY title ASC
+
+--- new query
+SELECT AVG (rental_rate) AS average_movie_rental_rate,
+  MAX (rental_duration) AS maximum_rental_duration,
+  MIN (rental_duration) AS minimum_rental_duration,
+  COUNT(title) AS count_of_movies
+FROM film
+WHERE rating='PG'
+  OR rating='G'
