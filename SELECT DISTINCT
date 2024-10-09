@@ -1,0 +1,8 @@
+This query was used to check some columns for non-uniform values using the SELECT DISTINCT statement:
+
+SELECT DISTINCT customer_id,
+	store_id,
+	first_name,
+	last_name
+FROM customer
+WHERE COUNT(*) > 1
