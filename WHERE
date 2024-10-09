@@ -1,0 +1,9 @@
+This is a query to show films where rating is either PG or G:
+
+SELECT film_id, title, description, rating
+FROM film
+WHERE rating='PG'
+
+
+OR rating='G'
+ORDER BY title ASC
