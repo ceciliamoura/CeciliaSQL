@@ -1,0 +1,7 @@
+This is a query to retrieve number of customers per country, that showcases an inner join:
+
+SELECT country.country, COUNT (DISTINCT customer_id) as total_number_cust
+FROM customer
+INNER JOIN address ON customer.address_id = address.address_id
+INNER JOIN city ON address.city_id = city.city_id
+INNER JOIN country ON city.country_id = country.country_id
